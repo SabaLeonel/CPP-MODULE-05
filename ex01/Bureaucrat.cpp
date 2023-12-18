@@ -18,6 +18,20 @@ Bureaucrat::Bureaucrat(std::string name, int grade) : _name(name){
         _grade = grade;
 }
 
+void Bureaucrat::signForm(Form& form) const
+{
+    try
+    {
+        form.beSigned(*this);
+        std::cout << _name << " signs " << form.getName() << std::endl;
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << _name << " cannot sign " << form.getName() << " because " << e.what() << std::endl;
+    }
+}
+
+
 Bureaucrat::Bureaucrat(Bureaucrat const &other) : _name(other._name){
     std::cout << "Bureaucrat copy constructor called" << std::endl;
     *this = other;
