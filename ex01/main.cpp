@@ -2,30 +2,16 @@
 
 int main (void)
 {
-    Bureaucrat *bureaucrat = new Bureaucrat("Bureaucrat", 150);
-    std::cout << *bureaucrat << std::endl;
-    try{
-        bureaucrat->decrementGrade();
-    }
-    catch (std::exception &e){
-        std::cout << e.what() << std::endl;
-    }
-    std::cout << *bureaucrat << std::endl;
+    Bureaucrat b1("b1", 1);
+    Bureaucrat b2("b2", 150);
+    Form f1("f1", 1, 1);
+    Form f2("f2", 150, 150);
 
-    Bureaucrat *bureaucrat2 = new Bureaucrat("Bureaucrat2", 1);
-    std::cout << *bureaucrat2 << std::endl;
-    try{
-        bureaucrat2->incrementGrade();
-    }
-    catch (std::exception &e){
-        std::cout << e.what() << std::endl;
-    }
-    std::cout << *bureaucrat2 << std::endl;
+    b1.signForm(f1);
+    b1.signForm(f2);
+    b2.signForm(f1);
+    b2.signForm(f2);
 
- 
-    delete bureaucrat;
-    delete bureaucrat2;
-    
     return (0);
 
 }

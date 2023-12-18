@@ -44,7 +44,7 @@ int Form::getGradeToExecute() const{
     return (_gradeToExecute);
 }
 
-void Form::beSigned(Bureaucrat &bureaucrat){
+void Form::beSigned(const Bureaucrat& bureaucrat){
     if (bureaucrat.getGrade() > _gradeToSign)
         throw Form::GradeTooHighException();
     else

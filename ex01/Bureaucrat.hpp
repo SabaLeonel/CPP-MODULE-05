@@ -6,6 +6,8 @@
 #include <stdexcept>
 #include "Form.hpp"
 
+class Form;
+
 class Bureaucrat{
     public:
         Bureaucrat();
@@ -17,7 +19,7 @@ class Bureaucrat{
         int getGrade() const;
         void incrementGrade();
         void decrementGrade();
-        void signForm(Form &form) const;
+        void signForm(Form& form) const;
     private:
         std::string const _name;
         int _grade;

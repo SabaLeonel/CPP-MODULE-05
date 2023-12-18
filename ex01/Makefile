@@ -11,6 +11,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic -g
 # Source files
 SRC = main.cpp \
 	Bureaucrat.cpp \
+	Form.cpp \
 
 # Object files
 OBJ = $(SRC:.cpp=.o)
