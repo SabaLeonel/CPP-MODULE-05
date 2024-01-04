@@ -1,0 +1,48 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "lDEaMVev192TR2yUKK_Ud",
+      "type": "text",
+      "x": 185.615234375,
+      "y": 190.576171875,
+      "width": 796.875,
+      "height": 120,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 2038980582,
+      "version": 198,
+      "versionNonce": 1667126970,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1704371008949,
+      "link": null,
+      "locked": false,
+      "text": "1. ShrubberyCreation Form\n2. RobotomyRequestForm\n3. PresidentialForm\n\nAdd function Execute(Bureaucrat const & executor) const to base FORM",
+      "fontSize": 20,
+      "fontFamily": 3,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 115,
+      "containerId": null,
+      "originalText": "1. ShrubberyCreation Form\n2. RobotomyRequestForm\n3. PresidentialForm\n\nAdd function Execute(Bureaucrat const & executor) const to base FORM",
+      "lineHeight": 1.2
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
