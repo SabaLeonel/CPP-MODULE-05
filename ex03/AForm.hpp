@@ -20,7 +20,7 @@ class AForm {
         AForm();
         AForm(std::string name, int gradeToSign, int gradeToExecute);
         AForm(AForm const &other);
-        ~AForm();
+        virtual ~AForm();
         AForm &operator=(AForm const &other);
         std::string const getName() const;
         bool getSigned() const;

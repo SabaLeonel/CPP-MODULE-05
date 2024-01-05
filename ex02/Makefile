@@ -6,12 +6,15 @@ TARGET = Bureaucrat
 # Compiler to use
 CXX = c++
 # Compiler flags
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic -g
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g3 -O3
 
 # Source files
 SRC = main.cpp \
 	Bureaucrat.cpp \
-	Form.cpp \
+	AForm.cpp \
+	ShrubberyCreationForm.cpp \
+	RobotomyRequestForm.cpp \
+	PresidentialPardonForm.cpp
 
 # Object files
 OBJ = $(SRC:.cpp=.o)
