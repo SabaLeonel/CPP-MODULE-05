@@ -4,7 +4,6 @@
 #include "PresidentialPardonForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "Intern.hpp"
-
 #include <iostream>
 
 int main(void)
@@ -13,10 +12,10 @@ int main(void)
         Intern intern;
         AForm *form;
          // Create a Bureaucrat with a different name and rank
-        Bureaucrat bar("bar", 2); 
 
         // Request a different type of form
-        form = intern.makeForm("Robotomy Request", "BENDER");
+        form = intern.makeForm("RobotomyRequestForm", "target");
+        Bureaucrat bar("bar", 1); 
         bar.signForm(*form);
         bar.executeForm(*form);
         delete form;

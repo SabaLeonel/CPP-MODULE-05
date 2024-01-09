@@ -6,7 +6,7 @@ TARGET = Bureaucrat
 # Compiler to use
 CXX = c++
 # Compiler flags
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g3 -O3 -fsanitize=address
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g3 -O3 #-fsanitize=address
 
 # Source files
 SRC = main.cpp \

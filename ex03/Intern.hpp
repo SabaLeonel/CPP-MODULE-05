@@ -14,7 +14,7 @@ class Intern {
         Intern(Intern const &other);
         ~Intern();
         Intern &operator=(Intern const &other);
-        AForm *makeForm(std::string formName, std::string &target);
+        AForm *makeForm(const std::string formName, std::string target);
 };
 
 typedef struct s_form {

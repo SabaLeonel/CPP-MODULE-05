@@ -57,11 +57,11 @@ void AForm::execute(Bureaucrat const & executor) const{
     this->CheckExecution(executor);
 }
 
-void AForm::beSigned(const Bureaucrat& bureaucrat){
-    if (bureaucrat.getGrade() > _gradeToSign)
-        throw AForm::GradeTooHighException();
+void AForm::beSigned(Bureaucrat &bureaucrat){
+    if (bureaucrat.getGrade() <= this->_gradeToSign)
+        this->_signed = true;
     else
-        _signed = true;
+        throw AForm::GradeTooHighException();
 }
 
 std::ostream &operator<<(std::ostream &out, AForm const &other){

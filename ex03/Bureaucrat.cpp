@@ -19,8 +19,7 @@ Bureaucrat::Bureaucrat(std::string name, int grade) : _name(name){
         _grade = grade;
 }
 
-void Bureaucrat::signForm(AForm& form) const
-{
+void Bureaucrat::signForm(AForm& form){
     try
     {
         form.beSigned(*this);

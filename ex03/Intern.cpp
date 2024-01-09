@@ -31,7 +31,7 @@ static AForm *makeRobotomyRequestForm(std::string const &target) {
     return (new RobotomyRequestForm(target));
 }
 
-AForm *Intern::makeForm(std::string const formName, std::string target)
+AForm *Intern::makeForm(const std::string formName, std::string target)
 {
     t_form forms[] = {
         {"ShrubberyCreationForm", makeShrubberyCreationForm},
@@ -46,8 +46,6 @@ AForm *Intern::makeForm(std::string const formName, std::string target)
         }
     }
 
-
     std::cout << "Intern cannot create " << formName << std::endl;
-
     return (NULL);
 }
